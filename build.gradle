@@ -5,11 +5,11 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.bmuschko:gradle-docker-plugin:3.2.8'
+//        classpath 'com.bmuschko:gradle-docker-plugin:3.2.8'
     }
 }
 repositories {
     jcenter()
 }
 
-apply from: 'cnf/gradle/docker-export.gradle'
+//apply from: 'cnf/gradle/docker-export.gradle'
