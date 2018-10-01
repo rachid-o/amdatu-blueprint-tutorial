@@ -1,0 +1,11 @@
+/build
+/.idea
+/.gradle
+*/generated/
+/bin/
+node_modules
+/target
+/out
+*.iml
+*.class
+*/log/
