@@ -1,0 +1,17 @@
+# Enable the base and config feature by default
+-buildfeatures.blueprint-default: base
+-runfeatures.blueprint-default: base, config
+
+-include: \
+	../features/blueprint/snapshot/base.bnd,\
+	../features/blueprint/snapshot/blobstores.bnd,\
+	../features/blueprint/snapshot/config.bnd,\
+	../features/blueprint/snapshot/email.bnd,\
+	../features/blueprint/snapshot/mongodb.bnd,\
+	../features/blueprint/snapshot/scheduling.bnd,\
+	../features/blueprint/snapshot/security.bnd,\
+	../features/blueprint/snapshot/shell.bnd,\
+	../features/blueprint/snapshot/template.bnd,\
+	../features/blueprint/snapshot/testing.bnd,\
+	../features/blueprint/snapshot/validator.bnd,\
+	../features/blueprint/snapshot/web.bnd

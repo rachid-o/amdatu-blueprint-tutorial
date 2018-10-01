@@ -1,0 +1,22 @@
+#
+# Amdatu Blueprint scheduling feature
+#
+blueprint-feature.scheduling: scheduling
+blueprint-repo.scheduling: http://amdatu-repo.s3.amazonaws.com/amdatu-scheduling/r7/repo/index.xml.gz
+
+#
+# Build
+#
+-buildpath.blueprint-scheduling: \
+	${if;(buildfeaturesMerged[]=scheduling); \
+		org.amdatu.scheduling.api\
+	}
+
+#
+# Run
+#
+-runbundles.blueprint-scheduling: \
+	${if;(runfeaturesMerged[]=scheduling); \
+		org.amdatu.scheduling.api,\
+		org.amdatu.scheduling.quartz\
+	}
