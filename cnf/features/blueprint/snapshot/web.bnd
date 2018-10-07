@@ -54,6 +54,8 @@ blueprint-deps.web: \
 #
 -runbundles.blueprint-web: \
 	${if;(runfeaturesMerged[]=web); \
+		jaxb-api,\
+		javax.ws.rs-api,\
 		com.fasterxml.jackson.core.jackson-annotations,\
 		com.fasterxml.jackson.core.jackson-core,\
 		com.fasterxml.jackson.core.jackson-databind,\

@@ -1,5 +1,7 @@
 -runfw: org.apache.felix.framework
 
+-runsystempackages: javax.activation,javax.xml.bind,javax.websocket
+
 -runfeatures: web,shell
 -runbundles: org.amdatu.tutorial.todo.api,\
   org.amdatu.tutorial.todo.app,\
